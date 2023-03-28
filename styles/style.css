@@ -61,3 +61,16 @@ a:hover,
   border-radius: 0.5rem;
   color: var(--cor-preto);
 }
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 570px) {
+  .principal__titulo {
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .principal__texto {
+    padding: 0 2rem;
+  }
+}
