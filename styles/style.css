@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Spectral:wght@500;600&display=swap');
 
+:root {
+  --cor-texto: #EBF1FB;
+  --cor-azul: #5EEAD4;
+  --cor-preto: #0B0C0E;
+
+  --fonte-primaria: 'Spectral', serif;
+  --fonte-secundaria: 'Beth Ellen', cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,32 +23,32 @@
   height: 100vh;
   display: grid;
   place-content: center;
-  color: #EBF1FB;
-  font-family: 'Spectral', serif;
+  color: var(--cor-texto);
+  font-family: var(--fonte-primaria);
 }
 
 .principal__titulo {
-  font-family: 'Beth Ellen', cursive;
+  font-family: var(--fonte-secundaria);
   font-weight: 400;
   font-size: 64px;
   line-height: 120px;
-  color: #EBF1FB;
+  color: var(--cor-texto);
 }
 
 h1 span {
-  color: #5EEAD4;
+  color: var(--cor-azul);
 }
 
 .principal__texto {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 72px;
+  margin-bottom: 4.5rem;
 }
 
 a {
-  color: #EBF1FB;
-  padding: 16px 32px;
+  color: var(--cor-texto);
+  padding: 1rem 2rem;
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
@@ -48,7 +57,7 @@ a {
 a:hover,
 .btn-primary {
   text-decoration: none;
-  background-color: #5EEAD4;
-  border-radius: 8px;
-  color: #0B0C0E;
+  background-color: var(--cor-azul);
+  border-radius: 0.5rem;
+  color: var(--cor-preto);
 }
